@@ -3,17 +3,19 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: corretto17
+      java: corretto8
+  pre_build:
+    commands:
+    - echo In the pre_build phase...
   build:
     commands:
-      - mvn clean package
-
+    - echo Build started on `date`
+  post_build:
+    commands:
+    - echo Build completed on `date`
+    - mvn package
+    
 artifacts:
   files:
-    - 'src/main/**/*'
-    - 'target/**/*'
-    - '.classpath/**/*'
-    - '.project/**/*'
-    - '.springBeans/**/*'
-    - 'appspec.yml/**/*'
-
+  - target/*.war
+  - appspec.yml/**/*
