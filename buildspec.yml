@@ -6,12 +6,7 @@ phases:
       java: corretto17
   build:
     commands:
-      - echo Build started on `date`
-      - mvn clean install
-  post_build:
-    commands:
-      - echo Build completed on `date`
-      - mvn package
+      - mvn install 
 
 artifacts:
   files:
