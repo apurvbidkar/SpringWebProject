@@ -12,4 +12,6 @@ artifacts:
   files:
      - scr/main/**/*
      - target/**/*
+     - scripts/**/*
+     - appspec.yml
     
