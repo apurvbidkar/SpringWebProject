@@ -16,9 +16,6 @@ phases:
       - echo Build completed on `date`    
 artifacts:
   files:
-    - scr/main/**/*
-    - target/**/*
-    - scripts/**/*
-    - appspec.yml
+    - "/**/*"
      
 
