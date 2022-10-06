@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 
 files:
-  - source: spring-boot-web-thymeleaf-1.0.war
+  - source: target/*.war
     destination: /opt/tomcat/webapps/
 
 hooks:
