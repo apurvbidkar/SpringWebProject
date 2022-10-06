@@ -16,7 +16,7 @@ phases:
       - echo Build completed on `date`    
 artifacts:
   files:
-    - target/**/*
+    - target/spring-boot-web-thymeleaf-1.0.war
     - appspec.yml
     - scripts/**/*
     - pom.xml
