@@ -1,7 +1,7 @@
 version: 0.0
 
 files:
-  - source: /target/*.war
+  - source: target/*.war
     destination: /opt/tomcat/webapps/
 
 hooks:
